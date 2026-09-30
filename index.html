@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leadership EXchange October Series &middot; Partner Activation Portal</title>
+<meta name="description" content="Everything The E1B2 Collective needs to promote and seat the four October Leadership EXchange dinners.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2D2B6D;--red:#F0493F;--purple:#5B5299;--lav:#A6B6F8;
+  --ink:#232135;--muted:#6C687E;--line:#E4E2EB;--ice:#F7F6F2;--grey:#f5f5f5;
+  --keka:#5412AE;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Poppins',-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fff;line-height:1.62;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px;}
+
+header{background:linear-gradient(120deg,#1B1A47 0%,var(--navy) 55%,var(--purple) 100%);color:#fff;padding:46px 0 40px;}
+.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:16px;}
+header h1{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:12px;}
+header p{font-size:16.5px;color:rgba(255,255,255,.87);font-weight:300;max-width:690px;}
+.hdrmeta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;}
+.chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);font-size:12.5px;font-weight:500;padding:7px 15px;}
+
+nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:40;box-shadow:0 1px 10px rgba(35,33,53,.06);}
+.navinner{display:flex;gap:2px;overflow-x:auto;padding:10px 0;}
+.navbtn{background:transparent;border:0;font-family:inherit;font-size:13px;font-weight:500;color:var(--muted);padding:8px 12px;cursor:pointer;white-space:nowrap;}
+.navbtn span{color:var(--red);font-weight:700;margin-right:7px;font-size:11px;}
+.navbtn:hover{background:var(--ice);color:var(--ink);}
+
+section{padding:50px 0 6px;scroll-margin-top:62px;}
+.shead{display:flex;align-items:baseline;gap:13px;border-bottom:2px solid var(--navy);padding-bottom:11px;margin-bottom:14px;}
+.snum{font-size:13px;font-weight:700;color:var(--red);letter-spacing:.08em;}
+h2{font-size:26px;font-weight:700;letter-spacing:-.02em;color:var(--navy);}
+.sblurb{font-size:15.5px;color:var(--muted);margin-bottom:24px;max-width:740px;}
+h3{font-size:16.5px;font-weight:700;color:var(--navy);margin:32px 0 11px;}
+h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+p{font-size:15px;margin-bottom:13px;}
+.lede{font-size:14px;color:var(--muted);margin-bottom:11px;}
+b,strong{font-weight:600;color:var(--navy);}
+a{color:var(--purple);}
+ul,ol{padding-left:21px;margin-bottom:14px;}
+li{font-size:14.5px;margin-bottom:7px;}
+
+table{width:100%;border-collapse:collapse;margin:8px 0 18px;}
+th{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:left;padding:0 12px 8px 0;border-bottom:2px solid var(--navy);font-weight:600;}
+td{font-size:13.5px;padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+td b{display:block;}
+.small{font-size:12px;color:var(--muted);}
+code{background:var(--grey);padding:2px 6px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:8px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:8px;}
+.card{border:1px solid var(--line);padding:18px 20px;background:#FCFCFD;}
+.card.p1{border-left:4px solid var(--red);}
+.card.p2{border-left:4px solid var(--purple);}
+.card.p3{border-left:4px solid var(--lav);}
+.card.ok{border-left:4px solid #1F9D55;}
+.card.no{border-left:4px solid var(--red);}
+.rank{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:5px;}
+.card.p2 .rank{color:var(--purple);}
+.card.p3 .rank{color:#8189C9;}
+
+.callout{background:#F4F3FF;border:1px solid #DDD9F5;padding:17px 20px;font-size:14.5px;margin:18px 0;line-height:1.62;}
+.callout.warn{background:#FFF7E8;border-color:#F2DCB0;}
+.callout p:last-child{margin-bottom:0;}
+
+.copyblock{border:1px solid var(--line);margin-bottom:16px;position:relative;background:#FCFCFD;padding-top:30px;}
+.copyblock::before{content:attr(data-label);position:absolute;top:0;left:0;background:var(--navy);color:#fff;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:5px 12px;}
+.cb-subject{font-size:13.5px;font-weight:600;color:var(--navy);padding:13px 18px 0;}
+.cb-body{white-space:pre-wrap;font-size:14.5px;line-height:1.66;padding:14px 18px 44px;color:#35324a;}
+.cbtn{position:absolute;bottom:9px;right:10px;background:var(--navy);color:#fff;border:0;font-family:inherit;font-size:11.5px;font-weight:600;padding:7px 15px;cursor:pointer;}
+.cbtn:hover{background:var(--red);}
+.cbtn.done{background:#1F9D55;}
+
+.linkrow{border:1px solid var(--line);border-left:4px solid var(--red);padding:15px 18px 52px;margin-bottom:11px;background:#FCFCFD;position:relative;}
+.linkrow .lr-city{font-size:17px;font-weight:700;color:var(--navy);}
+.linkrow .lr-meta{font-size:12.5px;color:var(--muted);margin:2px 0 9px;}
+.linkrow .lr-url{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:#35324a;word-break:break-all;background:var(--grey);padding:9px 11px;line-height:1.55;}
+.linkrow .cbtn{bottom:13px;right:18px;}
+
+.assetgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:15px;align-items:start;}
+.asset{border:1px solid var(--line);background:#FCFCFD;}
+.thumb{background:var(--navy);overflow:hidden;}
+.thumb img{width:100%;display:block;}
+figcaption{padding:10px 12px;}
+.an{display:block;font-size:12.5px;font-weight:600;color:var(--navy);}
+.ad{display:block;font-size:11px;color:var(--muted);margin:2px 0 7px;}
+.dl{font-size:11.5px;font-weight:600;color:var(--red);text-decoration:none;}
+
+details{border:1px solid var(--line);margin-bottom:9px;background:#FCFCFD;}
+summary{font-size:14.5px;font-weight:600;color:var(--navy);padding:14px 18px;cursor:pointer;list-style:none;}
+summary::-webkit-details-marker{display:none;}
+summary::before{content:"+";color:var(--red);font-weight:700;margin-right:11px;}
+details[open] summary::before{content:"\2212";}
+details .dbody{padding:0 18px 16px 41px;font-size:14.5px;color:#35324a;}
+details .dbody p{font-size:14.5px;}
+
+footer{border-top:1px solid var(--line);margin-top:52px;padding:26px 0 46px;font-size:13px;color:var(--muted);}
+
+@media(max-width:760px){
+  header h1{font-size:28px;}
+  .grid2,.grid3{grid-template-columns:1fr;}
+  .wrap{padding:0 18px;}
+  section{padding:36px 0 6px;}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Achieve &middot; Partner Activation Portal</div>
+    <h1>Leadership EXchange<br>October Series</h1>
+    <p>Everything you need to promote and seat four executive dinners for senior HR and People leaders. Built for The E1B2 Collective.</p>
+    <div class="hdrmeta">
+      <span class="chip">Austin &middot; Oct 13</span>
+      <span class="chip">Houston &middot; Oct 15</span>
+      <span class="chip">Boston &middot; Oct 27</span>
+      <span class="chip">New York &middot; Oct 29</span>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap"><div class="navinner">
+  <button class="navbtn" data-go="start"><span>01</span>Start here</button>
+  <button class="navbtn" data-go="goals"><span>02</span>Goals</button>
+  <button class="navbtn" data-go="who"><span>03</span>Who to invite</button>
+  <button class="navbtn" data-go="keka"><span>04</span>Keka &amp; topic</button>
+  <button class="navbtn" data-go="links"><span>05</span>Links</button>
+  <button class="navbtn" data-go="messaging"><span>06</span>Messaging</button>
+  <button class="navbtn" data-go="faq"><span>07</span>FAQ</button>
+  <button class="navbtn" data-go="collateral"><span>08</span>Collateral</button>
+</div></div></nav>
+
+<div class="wrap">
+
+<!-- ================= 01 ================= -->
+<section id="start">
+  <div class="shead"><span class="snum">01</span><h2>Start here</h2></div>
+  <p class="sblurb">The short version of what this is, what we are asking you to do, and where everything lives.</p>
+
+  <p><b>The Leadership EXchange</b> is an invite-only dinner series for senior, internal HR and People leaders. Small rooms, curated tables of six to eight, guided discussion, no panels and no presentations. Achieve runs the program. Keka co-hosts and underwrites it.</p>
+
+  <p>Four dinners in October, all on the same topic: <b>Performance Theater: We're Measuring More and Developing Less.</b></p>
+
+  <table>
+    <thead><tr><th>City</th><th>Date</th><th>Venue</th><th>Seats</th></tr></thead>
+    <tbody>
+      <tr><td><b>Austin</b></td><td>Tuesday, October 13, 2026<br><span class="small">5:30 to 8:30 PM CT</span></td><td>Parkside<br><span class="small">301 E 6th St, Austin, TX 78701</span></td><td>30</td></tr>
+      <tr><td><b>Houston</b></td><td>Thursday, October 15, 2026<br><span class="small">5:30 to 8:30 PM CT</span></td><td>Caracol<br><span class="small">2200 Post Oak Blvd, Suite 160, Houston, TX 77056</span></td><td>30</td></tr>
+      <tr><td><b>Boston</b></td><td>Tuesday, October 27, 2026<br><span class="small">5:30 to 8:30 PM ET</span></td><td>PORTO<br><span class="small">780 Boylston Street (Ring Road), Boston, MA 02199</span></td><td>30</td></tr>
+      <tr><td><b>New York</b></td><td>Thursday, October 29, 2026<br><span class="small">5:30 to 8:30 PM ET</span></td><td>The Palm Midtown<br><span class="small">250 W 50th St, New York, NY 10019</span></td><td>30</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What we are asking you to do</h3>
+  <ol>
+    <li><b>Email marketing at scale</b> to anyone in your audience or newly sourced who fits the profile in section 03, inviting them to the dinner in their city.</li>
+    <li><b>Direct, personal outreach</b> (phone, LinkedIn, one-to-one email) into the target account list and the global-footprint segment.</li>
+    <li><b>Drive registrations through your tracking links</b> in section 05 so everything you generate is attributed to you automatically.</li>
+    <li><b>Report activity weekly</b> against the three KPIs in section 02.</li>
+  </ol>
+
+  <div class="callout">
+    <p><b>The target account list lives here:</b> <a href="https://docs.google.com/spreadsheets/d/1d-H91wyrRzZI-c3Z6nQWL_hoepNvTEb335qiALmf8m8/edit?usp=sharing" target="_blank" rel="noopener">Keka target accounts by city &rarr;</a></p>
+    <p style="margin-top:9px;">These are companies Keka specifically asked to have in the room. Treat them as priority one.</p>
+  </div>
+
+  <h3>How registration works</h3>
+  <p>Everyone registers on the event page. <b>It is a request, not an instant confirmation.</b> Achieve reviews every registration by hand and confirms the ones that fit. That protects the room, and it is a genuinely useful thing to say in your outreach: it signals the event is curated, not a webinar.</p>
+  <p>Once confirmed, the attendee gets logistics from Achieve directly: venue details, Uber voucher, parking. You do not need to handle any of that.</p>
+</section>
+
+<!-- ================= 02 ================= -->
+<section id="goals">
+  <div class="shead"><span class="snum">02</span><h2>Goals and KPIs</h2></div>
+  <p class="sblurb">What good looks like, and an honest note about how we are holding these numbers.</p>
+
+  <div class="callout warn">
+    <p><b>Read this first.</b> This is the first time we are running this together, and the window to the first two events is tight. We are not going to hold you hard to these numbers on this round. They are here so we are aiming at the same thing and so we both learn what is realistic for the next series. What we do want is honest, consistent reporting on the three KPIs below, even when the numbers are ugly.</p>
+  </div>
+
+  <h3>Per event</h3>
+  <table>
+    <thead><tr><th>Level</th><th>Registrations</th><th>Attendees</th><th>Quality bar</th></tr></thead>
+    <tbody>
+      <tr><td><b>Stretch</b></td><td>15 to 20</td><td>10 to 15</td><td>Within the ICP or on the target account list</td></tr>
+      <tr><td><b>Base</b></td><td>5 to 10</td><td>5+</td><td>Within the ICP or on the target account list</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Registrations outside the ICP still count as activity, but they do not count toward these goals. A room of 30 that is the wrong 30 is a failed event for everyone involved.</p>
+
+  <h3>The three KPIs we want reported</h3>
+  <div class="grid3">
+    <div class="card p1">
+      <div class="rank">KPI 01</div>
+      <h4>Activity</h4>
+      <p style="font-size:13.5px;margin:0;">Accounts reached and contact made. How many companies you touched, how many humans you actually got in front of, and through what channel.</p>
+    </div>
+    <div class="card p2">
+      <div class="rank">KPI 02</div>
+      <h4>Registrations</h4>
+      <p style="font-size:13.5px;margin:0;">Requests submitted through your tracking links, split by city, and how many fall inside the ICP.</p>
+    </div>
+    <div class="card p3">
+      <div class="rank">KPI 03</div>
+      <h4>Attendance</h4>
+      <p style="font-size:13.5px;margin:0;">Who actually walked in the door. We will confirm this after each event and share it back with you.</p>
+    </div>
+  </div>
+
+  <h3>Reporting cadence</h3>
+  <ul>
+    <li><b>Weekly</b>, a short note with the three numbers above by city. A few lines in an email is fine. No deck needed.</li>
+    <li><b>After each event</b>, Achieve sends you the final attendance and feedback so you can see what converted.</li>
+    <li><b>Flag problems early.</b> If a city is not moving, tell us in week one, not the week of. We can shift promotion, adjust the approval bar, or extend the invite window, but only if we know.</li>
+  </ul>
+</section>
+
+<!-- ================= 03 ================= -->
+<section id="who">
+  <div class="shead"><span class="snum">03</span><h2>Who to invite</h2></div>
+  <p class="sblurb">Three buckets, in priority order. Work all three, but spend your expensive effort at the top.</p>
+
+  <div class="card p1" style="margin-bottom:14px;">
+    <div class="rank">Priority 1</div>
+    <h4>The target account list</h4>
+    <p style="margin-bottom:8px;">Companies Keka named by city as the ones they most want in the room. This is the highest-value bucket by a wide margin.</p>
+    <p style="margin-bottom:0;"><a href="https://docs.google.com/spreadsheets/d/1d-H91wyrRzZI-c3Z6nQWL_hoepNvTEb335qiALmf8m8/edit?usp=sharing" target="_blank" rel="noopener">Open the account list &rarr;</a></p>
+  </div>
+
+  <div class="card p2" style="margin-bottom:14px;">
+    <div class="rank">Priority 2</div>
+    <h4>200 to 5,000 employees with a global footprint</h4>
+    <p style="margin-bottom:0;">Director level and above, most industries. <b>Global footprint means the company has employees working in two or more countries.</b> That is the distinguishing filter for this bucket and it matters a lot to Keka, because multi-country workforce management is where their product earns its keep.</p>
+  </div>
+
+  <div class="card p3" style="margin-bottom:18px;">
+    <div class="rank">Priority 3</div>
+    <h4>200 to 5,000 employees, any footprint</h4>
+    <p style="margin-bottom:0;">Director level and above. This is the widest net and it is still a good guest. Promote here freely, just know it is the last bucket in Keka's order of preference.</p>
+  </div>
+
+  <div class="callout">
+    <p><b>How to split your effort.</b> For scaled email promotion, blast all three buckets. It is the cheapest way to fill seats and every one of these people is a legitimate guest. For direct outreach by phone and one-to-one messaging, which is expensive and converts far better, spend it almost entirely on buckets 1 and 2.</p>
+  </div>
+
+  <h3>Keka's stated ICP, in detail</h3>
+  <div class="grid2">
+    <div class="card ok">
+      <h4>Invite</h4>
+      <ul style="margin-bottom:0;">
+        <li><b>Size:</b> 200 to 5,000 employees</li>
+        <li><b>Decision makers:</b> CHRO, VP of HR or People</li>
+        <li><b>Influencers:</b> Director of HR or People</li>
+        <li><b>Also fine:</b> CPO, Chief People Officer, Head of People, Head of Talent, SVP People</li>
+        <li><b>Industries:</b> IT services, software, internet, information services, business consulting, law firms, accounting, manufacturing, advertising</li>
+        <li><b>Best fit overall:</b> technology, manufacturing, and professional services</li>
+      </ul>
+    </div>
+    <div class="card no">
+      <h4>Do not invite</h4>
+      <ul style="margin-bottom:0;">
+        <li>HR Manager or any title below Director</li>
+        <li>Talent Acquisition and recruiting profiles</li>
+        <li>Consultants and fractional practitioners</li>
+        <li>Anyone in a vendor, sales, or marketing role</li>
+        <li>Agency side or anyone selling into HR</li>
+        <li>External coaches and advisors</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small" style="margin-top:12px;">The exclusions are not preferences, they are the promise we make to the room. The single fastest way to damage this program is to let someone in who is there to sell. If you are unsure about a borderline person, send them over and we will make the call.</p>
+
+  <h3>A search string to start from</h3>
+  <p class="lede">Paste into LinkedIn Sales Navigator or use as the shape of your list pull. Swap the city.</p>
+  <div class="copyblock" data-label="Search string">
+    <div class="cb-body">("CHRO" OR "Chief People Officer" OR "Chief Human Resources Officer" OR "VP of People" OR "VP Human Resources" OR "VP of HR" OR "Head of People" OR "Director of People" OR "Director of Human Resources" OR "Senior Director Human Resources") AND "Austin" NOT "consultant" NOT "fractional" NOT "recruiter" NOT "talent acquisition" NOT "advisor"</div>
+  </div>
+</section>
+
+<!-- ================= 04 ================= -->
+<section id="keka">
+  <div class="shead"><span class="snum">04</span><h2>Keka and the topic</h2></div>
+  <p class="sblurb">Context you need in your head. Almost none of this belongs in the outreach itself.</p>
+
+  <h3>Who Keka is</h3>
+  <p>Keka is an HR and payroll software company. From their own site: they describe themselves as a people enabler covering payroll, core HR, performance, hiring and onboarding, time and attendance, and project timesheets, and they state they are trusted by 10,000+ organizations and used by 2.5 million employees. They serve technology and services, pharma and manufacturing, banking and financial services, and retail.</p>
+  <p>They are underwriting this series to build relationships with senior People leaders in the US market. <b>Their interest is the long game, not leads from the room.</b></p>
+
+  <div class="callout warn">
+    <p><b>How to talk about the sponsor.</b> Lead with the dinner and the conversation, never with Keka. If asked directly, the honest answer is: "Keka sponsors the series, they will be at the dinner as participants, and there is no pitch, demo, or presentation." Do not position this as a Keka event, do not send Keka product material, and do not promise anyone a Keka conversation. Attendees are asked once, after the event, whether they would like to talk further. That is the entire commercial motion.</p>
+  </div>
+
+  <h3>The topic: Performance Theater</h3>
+  <p><b>We're Measuring More and Developing Less.</b> This is the thing that makes the invite land, so it is worth knowing well.</p>
+  <p>We have never measured performance more precisely, and we have rarely felt less sure it is working. Gartner finds 95% of HR leaders are unhappy with their traditional performance process, and 59% of employees say reviews have no impact on how they actually perform. Gallup finds only 14% of employees strongly agree their reviews inspire them to improve. More reviews, more feedback loops, more dashboards, and the honest question in most HR leaders' minds is the same: are our people actually getting better?</p>
+
+  <h3>The three tables</h3>
+  <div class="grid3">
+    <div class="card">
+      <h4>1. The Measurement Trap</h4>
+      <p style="font-size:13.5px;margin:0;">We track more about performance than ever. Is any of it actually making people better? Roughly $1,500 per employee per year goes into performance processes and software.</p>
+    </div>
+    <div class="card">
+      <h4>2. The Manager Gap</h4>
+      <p style="font-size:13.5px;margin:0;">Development lives or dies at the manager level. Managers drive about 70% of the variance in engagement, yet only 39% of employees say their manager gives effective developmental feedback.</p>
+    </div>
+    <div class="card">
+      <h4>3. Rated vs. Grown</h4>
+      <p style="font-size:13.5px;margin:0;">70% of HR leaders believe their performance system fails to identify future leaders. One in three employees already feel they could have more impact in a different role.</p>
+    </div>
+  </div>
+  <p class="small" style="margin-top:12px;">Every statistic above is sourced from Gartner, Gallup, or Deloitte and is already published on our event pages. You are safe to use any of them verbatim. Please do not invent or round new ones.</p>
+</section>
+
+<!-- ================= 05 ================= -->
+<section id="links">
+  <div class="shead"><span class="snum">05</span><h2>Your tracking links</h2></div>
+  <p class="sblurb">Use these instead of the plain event URLs. Everything registered through them is attributed to you, by city, automatically.</p>
+
+  <div class="linkrow">
+    <div class="lr-city">Austin</div>
+    <div class="lr-meta">Tuesday, October 13 &middot; Parkside</div>
+    <div class="lr-url">https://www.achievenet.org/leadership-exchange-events/austin-leadership-exchange-performance-theater?utm_source=e1b2&amp;utm_medium=partner&amp;utm_campaign=lex-oct26-austin</div>
+  </div>
+
+  <div class="linkrow">
+    <div class="lr-city">Houston</div>
+    <div class="lr-meta">Thursday, October 15 &middot; Caracol</div>
+    <div class="lr-url">https://www.achievenet.org/leadership-exchange-events/houston-leadership-exchange-performance-theater?utm_source=e1b2&amp;utm_medium=partner&amp;utm_campaign=lex-oct26-houston</div>
+  </div>
+
+  <div class="linkrow">
+    <div class="lr-city">Boston</div>
+    <div class="lr-meta">Tuesday, October 27 &middot; PORTO</div>
+    <div class="lr-url">https://www.achievenet.org/leadership-exchange-events/boston-leadership-exchange-performance-theater?utm_source=e1b2&amp;utm_medium=partner&amp;utm_campaign=lex-oct26-boston</div>
+  </div>
+
+  <div class="linkrow">
+    <div class="lr-city">New York</div>
+    <div class="lr-meta">Thursday, October 29 &middot; The Palm Midtown</div>
+    <div class="lr-url">https://www.achievenet.org/leadership-exchange-events/new-york-leadership-exchange-performance-theater?utm_source=e1b2&amp;utm_medium=partner&amp;utm_campaign=lex-oct26-newyork</div>
+  </div>
+
+  <div class="callout">
+    <p><b>Two rules.</b> Use the full link every time, including on the phone if you are sending a follow-up text or email. And do not shorten them through a service that strips query strings, or the attribution disappears and your work becomes invisible in the reporting.</p>
+  </div>
+</section>
+
+<!-- ================= 06 ================= -->
+<section id="messaging">
+  <div class="shead"><span class="snum">06</span><h2>Messaging</h2></div>
+  <p class="sblurb">This is the exact sequence we are running today, lightly generalized. Take it, rewrite it in your voice, make it yours.</p>
+
+  <div class="callout">
+    <p><b>Fill in the brackets.</b> <code>[CITY]</code>, <code>[DATE]</code>, <code>[VENUE]</code>, <code>[LINK]</code>. All four values for each city are in sections 01 and 05.</p>
+  </div>
+
+  <h3>The four-email sequence</h3>
+  <p class="lede">Roughly three weeks out, two weeks, one week, and a few days before. Each one leads with something different so the fourth email does not read like the first.</p>
+
+  <div class="copyblock" data-label="Email 1 &middot; the invitation">
+    <div class="cb-subject">Subject: Join [CITY]'s Top HR &amp; People Leaders, [DATE] Dinner Invite<br>Alt: You're Invited: Performance, Development &amp; Peer Exchange Dinner, [CITY], [DATE]</div>
+    <div class="cb-body">Hi [First Name],
+
+I wanted to extend a personal invitation to an exclusive dinner and peer exchange happening [DATE] in [CITY], designed specifically for senior HR, Talent, and People leaders.
+
+We're bringing together ~30 local leaders for a private, high impact evening of great food, candid conversation, and future focused strategy sharing.
+
+Leadership Exchange: [CITY] (Learn More &amp; Request Your Seat)
+
+- Located: [VENUE]
+- Date/Time: [DATE], Reception 5:30 PM | Dinner &amp; Roundtables 6:30 to 8:30 PM
+- Valet or Uber voucher provided | Complimentary to attend | SHRM/HRCI recert credits available
+
+The evening's theme: Performance Theater: We're Measuring More and Developing Less
+
+Topics include:
+
+- The Measurement Trap: what your organization actually measures, and whether any of it changes behavior
+- Manager Multiplier: what your best managers do at developing people that your process never asks for or teaches
+- Rated vs Grown: what really happens after the rating
+
+If you're open to joining us, or think a peer would benefit, you can request your invite here: [LINK]
+
+This is a rare chance to step out of the day to day, connect with fellow leaders, and leave recharged with new ideas and connections.
+
+Please don't hesitate to reach out with any questions. Hope we get to welcome you in [CITY].
+
+Warmly,</div>
+  </div>
+
+  <div class="copyblock" data-label="Email 2 &middot; the room and the format">
+    <div class="cb-subject">Subject: Re: Leadership Exchange, [CITY]</div>
+    <div class="cb-body">Hi [First Name],
+
+Nudging my last note to make sure the details reached you.
+
+We're in [CITY] on [DATE], at [VENUE], digging into performance theater, the gap between how much we measure people and how little of it actually develops them.
+
+Reception at 5:30pm, dinner and roundtables 6:30pm to 8:30pm.
+
+The room is intentionally small. Around 30 leaders from talent, people, HR, and operations, Director level through the C-suite. We keep it that way to protect what gets said, and to leave room for real conversation over a good dinner.
+
+Would love to have you at the table. You can lock in your seat here - [LINK]
+
+Warmly,</div>
+  </div>
+
+  <div class="copyblock" data-label="Email 3 &middot; social proof">
+    <div class="cb-subject">Subject: Two weeks out, [CITY]</div>
+    <div class="cb-body">Hi [First Name],
+
+Wanted to nudge this again. We're about two weeks out from the [CITY] dinner on the [DATE].
+
+The room is filling up. Leaders joining us from [COMPANY], [COMPANY], [COMPANY], and [COMPANY], mostly CHROs, VPs of people, and senior directors.
+
+Would love to have you at the table with them.
+
+Any questions I can help answer?
+
+Otherwise, if you're ready to lock in your seat, fill out the form on this page and we'll send your confirmation and everything else you need - [LINK]
+
+Warmly,</div>
+  </div>
+
+  <div class="copyblock" data-label="Email 4 &middot; short and personal">
+    <div class="cb-subject">Subject: [CITY] Leadership Exchange, [DATE]</div>
+    <div class="cb-body">Hi [First Name],
+
+We are getting close to our next [CITY] Leadership Exchange and we would love for you to join.
+
+These are intentionally intimate so we can get deeper into the discussions that are top of mind for us.
+
+Have something you'd love to discuss with another CPO or Head of Talent?
+
+RSVP HERE and we can share more info about the program and send confirmation details - [LINK]
+
+Warmly,</div>
+  </div>
+
+  <div class="callout warn">
+    <p><b>Email 3 needs real company names.</b> Only use companies actually registered for that city. Ask us and we will give you the current list. Never invent an attendee name to create social proof, and never name an individual person without their permission.</p>
+  </div>
+
+  <h3>Phone and direct outreach</h3>
+  <p class="lede">For buckets 1 and 2. Do not read this, it is the shape of the conversation.</p>
+  <div class="copyblock" data-label="Call opener">
+    <div class="cb-body">Hi [First Name], this is [Your name] with The E1B2 Collective. I'll be quick.
+
+I'm helping put together a closed-door dinner for senior HR and People leaders in [CITY] on [DATE]. About 30 people, Director level and above, all internal practitioners. No vendors, no panels, no slides.
+
+The topic is performance theater, basically that we're all measuring performance more than ever and not getting any better at improving it. Three tables, guided conversation, good dinner at [VENUE].
+
+Dinner and drinks are covered, we cover your ride and parking, and it's approved for SHRM and HRCI credits.
+
+Is that something you'd want a seat at?</div>
+  </div>
+
+  <div class="copyblock" data-label="If they ask who is behind it">
+    <div class="cb-body">Achieve runs the program. It's their community of HR and People leaders.
+
+Keka, an HR software company, sponsors the series and helps cover the cost of the evening. They'll be there as participants. There's no pitch, no demo, and no presentation of any kind during the dinner.
+
+Afterward you get asked once whether you'd like to learn more about them. Completely up to you, and plenty of people say no and still come back to the next one.</div>
+  </div>
+
+  <div class="copyblock" data-label="LinkedIn DM">
+    <div class="cb-body">Hi [First Name],
+
+We're pulling together a closed-door dinner for senior HR and People leaders in [CITY] on [DATE]. Around 30 people, Director and above, internal practitioners only. No vendors, no panels.
+
+Topic is performance theater: we're measuring more than ever and developing less. Dinner and drinks covered, ride and parking covered, SHRM and HRCI credits.
+
+Thought it would be your kind of room. Want the details?</div>
+  </div>
+
+  <h3>Rules of the road</h3>
+  <div class="grid2">
+    <div class="card ok">
+      <h4>Always</h4>
+      <ul style="margin-bottom:0;">
+        <li>Lead with the topic and the room, not the free dinner</li>
+        <li>Say it is invite-only and reviewed by hand</li>
+        <li>Say there are no panels, slides, or pitches</li>
+        <li>Be clear the sponsor exists if anyone asks</li>
+        <li>Use your tracking link every single time</li>
+      </ul>
+    </div>
+    <div class="card no">
+      <h4>Never</h4>
+      <ul style="margin-bottom:0;">
+        <li>Call it a Keka event or send Keka product material</li>
+        <li>Promise a confirmed seat. Registration is a request</li>
+        <li>Invent attendee names for social proof</li>
+        <li>Invent or round statistics</li>
+        <li>Invite vendors, consultants, TA, or below Director</li>
+        <li>Use a link shortener that strips the UTM</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 ================= -->
+<section id="faq">
+  <div class="shead"><span class="snum">07</span><h2>FAQ</h2></div>
+  <p class="sblurb">The questions you will get. Answers you can use nearly word for word.</p>
+
+  <details open><summary>What actually is the Leadership EXchange?</summary><div class="dbody">
+    <p>An invite-only dinner for senior HR and People leaders, built around one topic and real conversation. It exists because there is almost nowhere for practitioners at this level to compare notes honestly without a vendor in the middle of it. The value is the room: people who are running the same problems inside organizations of a similar size and shape.</p>
+  </div></details>
+
+  <details><summary>What is the format?</summary><div class="dbody">
+    <p>Reception with drinks from 5:30. Everyone sits around 6:30 at tables of six to eight. Tables run on guided prompts rather than a speaker, and Achieve seats the room deliberately so you are with people working on the same things you are. Done by 8:30.</p>
+    <p>It is topic-driven and structured, but there is real room to put your own question on the table. Some of the best conversations start when someone says "here is what I am actually stuck on."</p>
+  </div></details>
+
+  <details><summary>Who else is in the room?</summary><div class="dbody">
+    <p>Internal practitioners only, Director level and above. CHROs, CPOs, VPs of HR and People, and the Directors who run this work day to day. Around 30 people, from organizations of roughly 250 to 5,000 employees.</p>
+  </div></details>
+
+  <details><summary>Are vendors or salespeople allowed?</summary><div class="dbody">
+    <p>No. No vendors, no consultants, no fractional practitioners, and no sales or marketing leaders. This is the rule that makes the rest of it work, and it is enforced at the approval stage.</p>
+  </div></details>
+
+  <details><summary>There is a sponsor. What does that mean for me?</summary><div class="dbody">
+    <p>Keka, an HR software company, underwrites the series. They will be in the room as participants in the conversation. There are <b>no pitches, no demos, and no presentations</b> at any point in the evening.</p>
+    <p>After the event you get asked once whether you would like to set up time to learn more about them. That is entirely your call, and saying no changes nothing about your standing in the community.</p>
+  </div></details>
+
+  <details><summary>What does it cost?</summary><div class="dbody">
+    <p>Nothing. Dinner and drinks are fully covered.</p>
+  </div></details>
+
+  <details><summary>How do I get there and park?</summary><div class="dbody">
+    <p>Covered. Attendees receive an Uber voucher, and valet parking is fully covered at venues that have it. Achieve sends the details the day before the event.</p>
+  </div></details>
+
+  <details><summary>Do I get recertification credits?</summary><div class="dbody">
+    <p>Yes. The session is approved for SHRM and HRCI recertification credits, which are emailed to attendees afterward.</p>
+  </div></details>
+
+  <details><summary>I registered. Am I confirmed?</summary><div class="dbody">
+    <p>Not yet. Registration is a request. Achieve reviews every one personally to protect the makeup of the room, then sends a confirmation directly. Most people hear back quickly.</p>
+  </div></details>
+
+  <details><summary>Can I bring someone from my team?</summary><div class="dbody">
+    <p>Ask. If they are Director level or above and internal, it is usually a yes, subject to seats. Send the name and title over rather than bringing someone unannounced.</p>
+  </div></details>
+
+  <details><summary>What is the topic this time?</summary><div class="dbody">
+    <p>Performance Theater: We're Measuring More and Developing Less. Three tables: the measurement trap, the manager gap, and the space between rating someone and actually growing them. Full detail is in section 04.</p>
+  </div></details>
+
+  <details><summary>Will it be recorded, and is it on the record?</summary><div class="dbody">
+    <p>Nothing is recorded. The room is small specifically so people can be candid. Treat it as off the record unless someone says otherwise.</p>
+  </div></details>
+</section>
+
+<!-- ================= 08 ================= -->
+<section id="collateral">
+  <div class="shead"><span class="snum">08</span><h2>Collateral</h2></div>
+  <p class="sblurb">Co-branded graphics for each city. Download links under each. Need a different size or format, ask and it will be back the same day.</p>
+  <div class="assetgrid" id="ag"></div>
+  <p class="small" style="margin-top:16px;">Banner 1200 &times; 627 for email headers, LinkedIn link shares, and web. Social square 1200 &times; 1200 for LinkedIn and Instagram posts. Cover 1584 &times; 396 for LinkedIn profile headers.</p>
+</section>
+
+<footer>
+  Achieve &middot; Leadership EXchange October Series. Questions, a new asset, a current registrant list, or a judgment call on a borderline invite: <a href="mailto:zechd@achievenet.org">zechd@achievenet.org</a>.
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.navbtn').forEach(b => b.onclick = () => {
+  document.getElementById(b.dataset.go).scrollIntoView({behavior:'smooth'});
+});
+
+// collateral grid
+const CITIES = [['AUSTIN','Austin','October 13'],['HOUSTON','Houston','October 15'],['BOSTON','Boston','October 27'],['NEWYORK','New York','October 29']];
+const KINDS = [['banner','Banner','1200 x 627'],['square','Social square','1200 x 1200'],['cover','LinkedIn cover','1584 x 396']];
+document.getElementById('ag').innerHTML = CITIES.map(c => KINDS.map(k => {
+  const f = k[0] + '__' + c[0] + '.jpg';
+  return `<figure class="asset">
+    <div class="thumb"><img src="${f}" alt="${k[1]} for ${c[1]}" loading="lazy"></div>
+    <figcaption>
+      <span class="an">${c[1]} &middot; ${k[1]}</span>
+      <span class="ad">${c[2]} &middot; ${k[2]}</span>
+      <a class="dl" href="${f}" download="${f}">Download</a>
+    </figcaption>
+  </figure>`;
+}).join('')).join('');
+
+// copy buttons
+document.querySelectorAll('.copyblock, .linkrow').forEach(b => {
+  const btn = document.createElement('button');
+  btn.className = 'cbtn'; btn.textContent = 'Copy';
+  btn.onclick = () => {
+    const el = b.querySelector('.cb-body') || b.querySelector('.lr-url');
+    navigator.clipboard.writeText(el.innerText.trim()).then(() => {
+      btn.textContent = 'Copied'; btn.classList.add('done');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+    });
+  };
+  b.appendChild(btn);
+});
+</script>
+</body>
+</html>
